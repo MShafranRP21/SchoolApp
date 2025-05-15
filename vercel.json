@@ -1,25 +1,14 @@
 {
   "functions": {
     "api/index.php": {
-      "runtime": "now-php@1.0.0"
+      "runtime": "vercel-php@0.5.5"
     },
 
   },
   "routes": [
     { "src": "/(.*)", "dest": "/index.php" },
-     {
-              "src": "/(.*)",
-              "dest": "index.js"
-            }
-  ],
 
-  "version": 2,
-          "builds": [
-            {
-              "src": "index.js",
-              "use": "@vercel/node"
-            }
-          ],
+  ],
 
   
 }
